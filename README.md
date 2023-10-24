@@ -2,7 +2,7 @@
 
 I am excited to introduce a Crop Recommender System that combines advanced machine learning with seamless API integration, empowering users with data-driven crop selection recommendations. With a focus on optimizing yields and promoting sustainable practices, this system redefines agriculture in a technological age.
 
-![Postman Test API]([https://github.com/Clinton-Nyaore/TyLAB/blob/main/ui.png](https://github.com/Clinton-Nyaore/crop-recommender-system_ML/blob/main/screenshots/postman.png))
+![Postman Test API](https://github.com/Clinton-Nyaore/TyLAB/blob/main/ui.png](https://github.com/Clinton-Nyaore/crop-recommender-system_ML/blob/main/screenshots/postman.png)
 
 ## Table of Contents
 - [Features](#features)
