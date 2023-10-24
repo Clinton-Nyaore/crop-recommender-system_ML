@@ -1,0 +1,107 @@
+{
+	"info": {
+		"_postman_id": "78be4bc1-5052-4808-9512-8672b28a1513",
+		"name": "Crop-recommendation",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "14081802"
+	},
+	"item": [
+		{
+			"name": "sample request",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"N\": 50.551818,\r\n    \"P\": 53.362727,\r\n    \"K\": 48.149091,\r\n    \"temperature\": 25.616244,\r\n    \"humidity\": 71.481779,\r\n    \"ph\": 6.46948,\r\n    \"rainfall\": 103.463655\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://recommender.rhea.africa/api/crop-recommendation",
+					"protocol": "https",
+					"host": [
+						"recommender",
+						"rhea",
+						"africa"
+					],
+					"path": [
+						"api",
+						"crop-recommendation"
+					]
+				},
+				"description": "**Crop and Fertilizer Recommendations Application Report**\n\n**Introduction:**\n\nThe Crop and Fertilizer Recommendations Application is a web-based tool that provides recommendations for suitable crops and fertilizers based on real-time sensor data. It leverages machine learning models to predict the best crop based on soil and environmental conditions, and suggests appropriate fertilizers for optimal crop growth.\n\nFunctionality:\n\n1\\. Sensor Input: The application receives input parameters from sensors deployed in the field, such as soil moisture, temperature, rainfall, light intensity and soil nutrients\n\n**2**. Crop Prediction: Based on the real-time sensor data, the application employs a machine learning models to predict the most suitable crop for the current conditions.\n\n**3**. Fertilizer Recommendation: After predicting the crop, the application suggests the recommended fertilizers for both pre-planting and top-dressing stages, taking into account the nutrient levels detected by the sensors.\n\n**4**. API Integration: The application provides an API endpoint where sensor data can be sent via HTTP POST requests to receive crop recommendations and fertilizer suggestions in JSON format.\n\n**Technical Implementation:**\n\nThe application is built using the following technologies:\n\n1\\. Backend Framework: Flask, a Python web framework, is used to develop the API endpoints and handle HTTP requests/responses.\n\n**2**. Machine Learning Model: The application utilizes a crop recommendation model trained on historical and real-time sensor data to predict the most suitable crop based on the current conditions.\n\n**3**. Sensor Integration: The application interfaces with the sensor devices to receive real-time data. The data is processed and used as input for the crop prediction and fertilizer recommendation algorithms.\n\n**4**. Data Storage: The application may store historical sensor data and crop/fertilizer information in a database for analysis and future reference.\n\n**API Usage:**\n\nUsers can interact with the Crop and Fertilizer Recommendations Application API by sending HTTP POST requests to the following endpoint:\n\nEndpoint: \\`/api/crop-recommendation\\`\n\nRequest Method: POST\n\nRequest Content-Type: application/json\n\nRequest Body: JSON object containing the sensor data (moisture, temperature, light intensity, humidity)\n\nThe API responds with a JSON object containing the recommended crop and corresponding fertilizer suggestions based on the sensor data. Users can integrate this API into their own applications or systems to automate crop and fertilizer recommendations based on real-time sensor readings.\n\n**Conclusion**:\n\nThe Crop and Fertilizer Recommendations Application provides a powerful tool for farmers and agricultural professionals to make data-driven decisions for crop selection and fertilizer usage. By leveraging real-time sensor data and machine learning models, the application offers personalized recommendations tailored to the current environmental conditions. This can lead to improved crop yields, resource efficiency, and sustainable  \nagricultural practices. The API integration capabilities enable seamless integration with sensor networks and other agricultural systems, further enhancing the usability and versatility of the application."
+			},
+			"response": []
+		},
+		{
+			"name": "New Request",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"N\": 50.551818,\r\n    \"P\": 53.362727,\r\n    \"K\": 48.149091,\r\n    \"temperature\": 25.616244,\r\n    \"humidity\": 71.481779,\r\n    \"ph\": 6.46948,\r\n    \"rainfall\": 103.463655\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://recommender.rhea.africa/api/crop-recommendation?N=0.01226363&P=20.683637&K=89.00072&temperature =0.9834&humidity =0.52145&ph=7.562462&rainfall =120.0002",
+					"protocol": "https",
+					"host": [
+						"recommender",
+						"rhea",
+						"africa"
+					],
+					"path": [
+						"api",
+						"crop-recommendation"
+					],
+					"query": [
+						{
+							"key": "N",
+							"value": "0.01226363"
+						},
+						{
+							"key": "P",
+							"value": "20.683637"
+						},
+						{
+							"key": "K",
+							"value": "89.00072"
+						},
+						{
+							"key": "temperature ",
+							"value": "0.9834"
+						},
+						{
+							"key": "humidity ",
+							"value": "0.52145"
+						},
+						{
+							"key": "ph",
+							"value": "7.562462"
+						},
+						{
+							"key": "rainfall ",
+							"value": "120.0002"
+						}
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
